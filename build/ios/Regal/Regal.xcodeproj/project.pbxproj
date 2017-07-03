@@ -1585,7 +1585,6 @@
 				7558DF0D18C67E0F008985A7 /* ir_builder.h in Headers */,
 				BCDF670E178F179800EE9569 /* gltrace.hpp in Headers */,
 				7558DF3118C67E0F008985A7 /* link_varyings.h in Headers */,
-				BCDF6711178F179800EE9569 /* trace.hpp in Headers */,
 				BCBA1FD717DF848800CB6E19 /* RegalEmuInfo.h in Headers */,
 				BCBA1FD817DF848800CB6E19 /* RegalClientState.h in Headers */,
 				BCBA1FD917DF848800CB6E19 /* RegalHint.h in Headers */,
@@ -1863,7 +1862,6 @@
 				BCDF670D178F179800EE9569 /* gltrace_state.cpp in Sources */,
 				BCDF670F178F179800EE9569 /* regaltrace.cpp in Sources */,
 				7558DB5418C6795A008985A7 /* pcre16_valid_utf16.c in Sources */,
-				BCDF6710178F179800EE9569 /* trace.cpp in Sources */,
 				7558DB7818C6795A008985A7 /* pcre_jit_compile.c in Sources */,
 				7558DB6518C6795A008985A7 /* pcre32_refcount.c in Sources */,
 				7558DB5A18C6795A008985A7 /* pcre32_config.c in Sources */,
@@ -1965,6 +1963,7 @@
 		43FC5EE915C45EBB00D0177C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
 				DSTROOT = /tmp/Regal.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = NO;
 				GCC_PREFIX_HEADER = "";
@@ -1972,6 +1971,7 @@
 					"REGAL_NO_PNG=1",
 					"REGAL_NO_JSON=1",
 					"HAVE_EXTERNAL_OS_LOG=1",
+					"REGAL_HTTP=0",
 				);
 				HEADER_SEARCH_PATHS = (
 					../../../include,
@@ -2001,6 +2001,7 @@
 		43FC5EEA15C45EBB00D0177C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
 				DSTROOT = /tmp/Regal.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = NO;
 				GCC_PREFIX_HEADER = "";
@@ -2008,6 +2009,7 @@
 					"REGAL_NO_PNG=1",
 					"REGAL_NO_JSON=1",
 					"HAVE_EXTERNAL_OS_LOG=1",
+					"REGAL_HTTP=0",
 				);
 				HEADER_SEARCH_PATHS = (
 					../../../include,
